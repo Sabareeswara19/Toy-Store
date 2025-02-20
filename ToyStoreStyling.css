@@ -1,0 +1,622 @@
+
+/* Never give border thickness to inputs */
+
+
+*{
+
+    box-sizing: border-box;
+    
+}
+
+* button{
+    cursor:pointer;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; Prevent scrolling */
+    overflow-x: hidden; 
+    /* overflow-y: hidden;  */
+    margin: 0;
+    background-color: rgb(149, 180, 208);
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(198,45,253,0.8408613445378151) 54%); */
+}
+
+
+/* ---------------------------------------------------Login Page--------------------------------------------------------- */
+
+.login_bgCont{
+
+    /* border:2px solid red; */
+    background-image: url("D:/Sabareeswar/React Js/React Codes/projects/public/Images/Images_TS/LoginPageAF.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loginCont{
+
+    /* border:2px solid blue; */
+    background-color: rgba(254, 253, 253, 0.4);
+    padding:1rem;
+    text-align: left;
+    border-radius: 20px;
+    height:35vh;
+    width: 20vw;
+    
+}
+
+.loginCont input{
+    border-radius: 5px;
+    width:90%;
+    height:4vh;
+    border:none;
+}
+
+.login_bgCont label{
+    font-size: 1.3rem;
+    color:rgb(250, 250, 250)
+}
+
+.loginCont button{
+    height: 4vh;
+    width:6vw;
+    background-color: rgb(155 222 162);
+    border:none;
+    border-radius: 5px;
+}
+
+
+.loginCont button:hover{
+    background-color:aqua;
+    font-size: medium;
+}
+
+
+
+
+
+/* ----------------------------------------------------------Header Page------------------------------------------------ */
+
+.headerCont{
+
+    /* border:2px solid blue; */
+    /* height:10vh;
+    width:100vw; */
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    top:0;
+    z-index:1;
+    background-color: rgba(228, 149, 185, 0.992);
+}
+
+.home_Cont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("D:/Sabareeswar/React Js/React Codes/projects/public/Images/homeBGAF.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+
+}
+
+.storeIconInHome{
+    border:2px solid red;
+    position: absolute;
+    bottom:2rem;
+    right:2rem;
+    
+}
+
+.logoCont{
+    /* border:2px solid green; */
+    height: 10vh;
+    width:30vw;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.optionCont{
+    /* border:2px solid red; */
+    height: 10vh;
+    width:70vw;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchInput{
+    /* border:2px solid red; */
+    width:10vw;
+
+    height:3vh;
+    border-radius:1rem;
+    /* background-color: transparent; */
+    border: 0px solid;
+}
+
+.searchInput:focus{
+    outline:none;
+}
+
+
+/* .optionCont input{
+    display: inline-block;
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 10vw;
+    padding: 10px; 
+    font-size: 16px; 
+} */
+
+
+
+/* -------------------------------Shop Page ---------------------------------------- */
+.shopBgCont{
+    height: auto;
+    width:90vw;
+    /* border:2px solid green; */
+    display: grid;
+    grid: 55vh/auto auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+    gap:1rem;
+    margin:2vw auto;
+    background-color: rgb(245, 217, 246);
+    justify-content: center;
+
+}
+
+.item_Cont{
+    border:2px solid rgb(232, 187, 187);
+    height:50vh;
+    width:25vw;
+    background-color: rgb(255, 255, 255) ;
+    margin:2.2vw;
+    border-radius: 1rem;
+    box-shadow: 2px 2px gray;
+    /* color:rgb(175, 180, 241); */
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    text-align: center;
+    
+} 
+
+.favIcon{
+    /* border:2px solid red; */
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}
+
+.item_Cont:hover{
+    transform: scale(1.1);
+    /* border:2px solid red; */
+
+}
+
+.item_Cont img{
+    transition: transform 1s ease-in-out;
+
+}
+
+.item_Cont img:hover{
+    transform: scale(1.5,1.08);
+    overflow-y: hidden;
+    /* border:2px solid blue; */
+
+
+}
+
+.img_Cont{
+    /* border:2px solid yellow; */
+    margin:0.5rem;
+}
+
+.itemDetails_Cont h2{
+    color:rgb(202 0 82);
+}
+
+.itemDetails_Cont h3{
+    color:rgb(1 11 83);
+}
+
+.addIcon{
+    
+}
+
+.addToCartBtn{
+    background-color: rgb(215 162 182);
+    border:none;
+    border-radius: 5px;
+}
+
+.addToCartBtn:hover{
+    border:2px solid rgb(200, 16, 16);
+}
+
+.removeIcon{
+        /* border:2px solid red; */
+        margin-right: 5px;
+        background-color: rgb(133 127 185);
+}
+
+.addIcon{
+    /* border:2px solid red; */
+    margin-left: 5px;
+    background-color: rgb(133 127 185);
+
+}
+
+.buyIconInShop{
+    /* border:2px solid red; */
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    bottom:2rem;
+    right:5rem;
+    padding:0.5rem;
+}
+
+.buyIconInShop:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px yellow;
+}
+
+
+/* -----------------------------------------Cart Items ------------------------------------------------------ */
+
+
+
+
+.carted_Cont{
+    height: 28vh;
+    width:28vw;
+    /* width: fixed; */
+    /* border:2px solid red; */
+    margin:1rem;
+    display: flex;
+    justify-content: row;
+    background-color: aquamarine;
+    border-radius:10px ;
+}
+
+.cartImg_Cont{
+    /* border:2px solid green; */
+    padding: 0.5rem;
+}
+
+.cartData_Cont{
+    /* border: 2px solid yellow; */
+    width:40vw;
+}
+
+.cartContinueBtn{
+
+    height:4vh;
+    width:10vw;
+    background-color:rgb(151, 213, 151);
+    /* border:none; */
+    /* margin: 0 auto; */
+    margin-left: 33%;
+    border:none;
+    border-radius: 1rem;
+    cursor:pointer;
+}
+
+.inCart_removeBtn{
+    background-color:white;
+    border:none;
+    border-radius:0.5rem;
+    height:3vh;
+    margin-left: 1.1em;
+}
+
+
+
+
+/* --------------------------------------------------Support Page ---------------------------------------------- */
+
+
+.sup_mainCont{
+    margin:0;
+    /* border: 2px solid blue; */
+    overflow: hidden;
+
+}
+
+/* .sup_detailsCont{
+    margin:0 auto;
+    padding:1rem;
+    border:2px solid white;
+    border-radius: 1rem;
+    text-align: left;
+    width:60vw;
+    height:50vh;
+    overflow-y: auto ;
+    background-color: rgb(238, 212, 241);
+} */
+
+.sup_detailsCont {
+    /* border:2px solid red; */
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: left;
+    width:50vw;
+    height: 50vh;
+    overflow-y: auto;
+    /* overflow: auto; Scroll appears only when needed */
+    background-color: rgb(238, 212, 241);
+}
+
+.sup_detailsBtn details{
+    
+    /* border:2px solid blue;; */
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    text-align: left;
+}
+
+
+.feedBack_Cont{
+    display: flex;
+    justify-content: center;
+}
+
+.contactSupportIcon{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    z-index: 2;
+}
+
+
+.hoverVisibiltyIcons{
+    visibility: hidden;
+
+}
+
+.contactSupportIcon:hover .hoverVisibiltyIcons {
+    visibility: visible;
+
+}
+
+
+.hoverVisibiltyIcons:hover{
+    filter: drop-shadow(10px 10px 7px white);
+}
+
+
+.sup_detailsBtn summary{
+    color:rgb(180 67 67);
+}
+
+.sup_detailsBtn p{
+    color:rgb(151 70 198);
+}
+
+
+
+/* --------------------------------------------------Buy Page ---------------------------------------------- */
+
+
+
+.buyer_Details {
+    width: 400px;
+    /* border: 2px solid red; */
+    border-radius: 1rem;
+    padding: 20px;
+    margin:0 auto;
+    background-color: rgb(255, 208, 147);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 150px; /* Fixed width for labels */
+    text-align: left; /* Align labels to the left */
+}
+
+.buyer_Details input, textarea {
+    flex: 1; /* Inputs take the remaining space */
+    padding: 5px;
+    /* border:2px solid yellow; */
+}
+
+
+.buy_BillCont{
+    margin: 0 auto;
+
+}
+
+.boughtItem_Details{
+    display:flex;
+    justify-content:space-between;
+    /* border:2px solid blue; */
+    margin:none;
+    height:2rem;
+    /* background-color: rgb(184, 241, 222); */
+    
+}
+
+.boughtItem_Details p{
+    color:rgb(160, 18, 37);
+}
+
+.boughtItem_Details h3{
+    color: rgb(152, 196, 98);
+}
+/* {} */
+
+.bill_Cont{
+/* border:2px solid red; */
+background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+height:35vh;
+width:35vw;
+margin:0 auto;
+overflow-y:auto;
+border-radius:1rem;
+padding: 1rem;
+
+}
+
+
+.buy_BillCont button{
+    background-color: rgb(229, 246, 123);
+    height: 5vh;
+    width:10vw;
+    border:none;
+    border-radius: 15px;
+}
+
+
+
+title{
+    background-color: aliceblue;
+}
+
+
+.paySelect_Cont{
+    /* border:2px solid blue; */
+}
+
+.paySelect_Cont label{
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.2rem;
+}
+
+.paySelect_Cont input{
+    transform: scale(1.5);
+}
+
+
+.card_Details{
+    border:2px solid white;
+    border-radius: 2rem;
+    width:20vw;
+    height:30vh;
+    margin: 0 auto;
+    background-color: rgb(224 238 225);
+}
+
+.card_Details input{
+    width:75%;
+    height:4vh;
+    margin:0.2rem;
+    border-radius:1rem;
+}
+
+
+.card_Details button{
+    background-color: aqua;
+    margin-top: 0.5rem;
+    width:6vw;
+    height: 3vh;
+}
+
+.upi_Cont button{
+    /* border: 2px solid red; */
+    margin-left: 1rem;
+    width:7vw;
+    height:4vh;
+}
+
+.upi_Cont button:hover{
+    background-color: white;
+    color:black;
+    font-size: medium;
+}
+
+
+.upi_Cont input{
+    width:12vw;
+    height:4vh;
+    border-radius: 1rem;
+    border:none;
+    margin-left: 1rem;
+
+}
+
+.upi_Cont label{
+    color:rgb(224, 90, 23);
+    font-weight: bold;
+    text-decoration:underline;
+    
+}
+
+
+/* ----------------------------------------------------User Page------------------------------------------------------------------ */
+
+
+.sidebar{
+    height:100vh;
+    width:20vw;
+    /* border:2px solid red; */
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 5;
+    /* background-color:rgb(159 162 243); */
+    background: linear-gradient(0deg, rgba(34,195,42,100%) 0%, rgba(45,253,216,1) 100%);
+
+    border-radius: 20px 0  0 20px;
+    padding: 1rem;
+    color: white;
+    /* transition: right 1s linear 5s; */
+}
+
+.userCont_Options{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0;
+    font-size: larger;
+    height: 2rem;
+    
+}
+
+.userCont_Options:hover{
+    background-color: rgba(240, 248, 255,0.4);
+
+}
+
+.userCont_Close{
+    position:absolute;
+    top:0.5rem;
+    right:0.5rem;
+    cursor:pointer;
+    color:white;
+}
+
+.userCont_Close:hover{
+    color: red;
+}
